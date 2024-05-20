@@ -1,0 +1,189 @@
+.vectorIcon {
+  height: 10px;
+  width: 6.7px;
+  position: relative;
+}
+.superhost {
+  height: 8px;
+  position: relative;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.vectorParent {
+  margin: 0 !important;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: var(--br-smi);
+  background-color: var(--white);
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-7xs) var(--padding-6xs);
+  gap: var(--gap-11xs);
+  z-index: 0;
+}
+.heartIcon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: scale(1.533);
+}
+.wrapperHeartIcon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin: 0 !important;
+  top: 10px;
+  right: 9.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.favoriteIcon {
+  height: 143px;
+  width: 181px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) 0 var(--padding-84xl);
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-3xs);
+  background-image: url(/public/favorite-icon@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-width: 181px;
+}
+.brightwoodsEstate {
+  position: relative;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
+.bridlepathOntarioCanada {
+  position: relative;
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.02em;
+  color: var(--light-text);
+  white-space: nowrap;
+}
+.stayCardLocation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+.emptyRatingStar {
+  height: 10px;
+  position: relative;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  min-width: 22px;
+}
+.filledRatingStar {
+  height: 13px;
+  width: 13px;
+  position: relative;
+  min-height: 13px;
+}
+.stayCardInfo,
+.stayRating {
+  display: flex;
+  justify-content: flex-start;
+}
+.stayRating {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-8xs);
+  font-size: var(--font-size-sm);
+}
+.stayCardInfo {
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 var(--padding-14xl-3) 0 0;
+  gap: var(--gap-xs);
+}
+.night,
+.priceAmount {
+  position: relative;
+  letter-spacing: 0.02em;
+  display: inline-block;
+}
+.priceAmount {
+  height: 11px;
+  font-weight: 600;
+  min-width: 38px;
+  white-space: nowrap;
+}
+.night {
+  height: 10px;
+  font-size: var(--font-size-sm);
+  color: var(--light-text);
+  min-width: 37px;
+}
+.pricePerNight {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-11xs);
+}
+.pricePerNight,
+.stayCardDetails,
+.stayPrice,
+.staycard {
+  display: flex;
+  justify-content: flex-start;
+}
+.stayPrice {
+  flex-direction: row;
+  align-items: center;
+  color: var(--accent);
+}
+.stayCardDetails,
+.staycard {
+  flex: 1;
+  box-sizing: border-box;
+  align-items: flex-start;
+}
+.stayCardDetails {
+  flex-direction: column;
+  padding: var(--padding-base);
+  gap: var(--gap-xl);
+  min-width: 164px;
+  font-size: var(--font-size-base);
+  color: var(--dark);
+}
+.staycard {
+  border-radius: var(--br-3xs);
+  background-color: var(--white);
+  border: 1px solid var(--light-grey-border);
+  overflow: hidden;
+  flex-direction: row;
+  min-width: 325px;
+  max-width: 100%;
+  row-gap: 20px;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--accent);
+  font-family: var(--font-archivo);
+}
+@media screen and (max-width: 450px) {
+  .favoriteIcon {
+    flex: 1;
+  }
+  .staycard {
+    flex-wrap: wrap;
+  }
+}

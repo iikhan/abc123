@@ -1,0 +1,105 @@
+.signIn {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  font-family: inherit;
+  flex-shrink: 0;
+  debug_commit: 1de1738;
+}
+.email,
+.password {
+  border: 0;
+  background-color: transparent;
+  align-self: stretch;
+  height: 51px;
+  font-family: var(--font-archivo);
+  font-size: var(--font-size-base);
+  color: var(--light-text);
+}
+.formFields {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  gap: var(--gap-base-7);
+}
+.searchFlightsButton {
+  width: 160px;
+  height: 52px;
+}
+.searchFlightsButton:hover {
+  background-color: var(--color-saddlebrown);
+}
+.form2 {
+  margin: 0;
+  padding: 0;
+  gap: var(--gap-7xl-7);
+}
+.form1,
+.form2,
+.signInParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.form1 {
+  flex-shrink: 0;
+  debug_commit: 1de1738;
+}
+.signInParent {
+  gap: var(--gap-5xl);
+}
+.formChild {
+  align-self: stretch;
+  height: 2px;
+  position: relative;
+  border-top: 1.6px solid var(--color-whitesmoke-200);
+  box-sizing: border-box;
+}
+.signUp {
+  color: var(--accent);
+}
+.dontHaveAnContainer {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.02em;
+  line-height: 26px;
+  text-align: center;
+  cursor: pointer;
+}
+.form {
+  flex: 1;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-21xl) var(--padding-29xl);
+  box-sizing: border-box;
+  gap: var(--gap-18xl-2);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-7xl);
+  color: var(--dark);
+  font-family: var(--font-archivo);
+}
+@media screen and (max-width: 750px) {
+  .form {
+    gap: var(--gap-lgi);
+    padding: var(--padding-184xl-5) var(--padding-5xl) var(--padding-7xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .signIn {
+    font-size: var(--font-size-2xl);
+  }
+}
